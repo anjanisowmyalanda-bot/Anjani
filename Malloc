@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n, i;
+    int *m_ptr, *c_ptr;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    // Using malloc
+    m_ptr = (int*)malloc(n * sizeof(int));
+
+    // Using calloc
+    c_ptr = (int*)calloc(n, sizeof(int));
+
+    printf("\nEnter elements for malloc array:\n");
+    for(i = 0; i < n; i++) {
+        scanf("%d", &m_ptr[i]);
+    }
+
+    printf("\nElements using malloc:\n");
+    for(i = 0; i < n; i++) {
+        printf("%d ", m_ptr[i]);
+    }
+
+    printf("\n\nElements using calloc (default values):\n");
+    for(i = 0; i < n; i++) {
+        printf("%d ", c_ptr[i]);  // initialized to 0
+    }
+
+    // Free memory
+    free(m_ptr);
+    free(c_ptr);
+
+    return 0;
+}
