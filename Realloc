@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *ptr, n, i;
+
+    // Initial allocation
+    printf("Enter initial size: ");
+    scanf("%d", &n);
+
+    ptr = (int*)malloc(n * sizeof(int));
+
+    printf("Enter elements:\n");
+    for(i = 0; i < n; i++) {
+        scanf("%d", &ptr[i]);
+    }
+
+    // Reallocation
+    printf("\nEnter new size: ");
+    scanf("%d", &n);
+
+    ptr = (int*)realloc(ptr, n * sizeof(int));
+
+    printf("Enter new elements:\n");
+    for(i = 0; i < n; i++) {
+        scanf("%d", &ptr[i]);
+    }
+
+    // Display elements
+    printf("\nElements after realloc:\n");
+    for(i = 0; i < n; i++) {
+        printf("%d ", ptr[i]);
+    }
+
+    // Free memory
+    free(ptr);
+
+    return 0;
+}
