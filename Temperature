@@ -12,6 +12,7 @@ int main() {
     scanf("%f", &f);
     c = (f - 32) * 5/9;
     printf("Celsius = %.2f", c);
+    printf ("25331A05F9");
 
     return 0;
 }
