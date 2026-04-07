@@ -15,9 +15,9 @@ int main() {
     }
 
     if(original == reverse)
-        printf("The number is a Palindrome");
+        printf("The number is a Palindrome\n");
     else
-        printf("The number is not a Palindrome");
-
+        printf("The number is not a Palindrome\n");
+        printf("25331A05F9");
     return 0;
 }
