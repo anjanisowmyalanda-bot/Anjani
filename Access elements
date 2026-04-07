@@ -4,11 +4,11 @@ int main() {
     int arr[] = {5, 10, 15, 20, 25};
     int *ptr;
 
-    ptr = arr; // pointer points to first element
+    ptr = arr;
 
     for(int i = 0; i < 5; i++) {
-        printf("%d ", *(ptr + i)); // accessing using pointer
+        printf("%d \n", *(ptr + i));
     }
-
+    printf("25331A05F9");
     return 0;
 }
