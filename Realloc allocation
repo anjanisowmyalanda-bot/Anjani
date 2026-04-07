@@ -24,9 +24,9 @@ int main() {
     }
     printf("\nElements after realloc:\n");
     for(i = 0; i < n; i++) {
-        printf("%d ", ptr[i]);
+        printf("%d \n", ptr[i]);
     }
     free(ptr);
-
+    printf("25331A05F9");
     return 0;
 }
