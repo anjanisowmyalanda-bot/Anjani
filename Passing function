@@ -1,4 +1,4 @@
-p#include <stdio.h>
+#include <stdio.h>
 
 void display(int arr[], int size);
 
@@ -7,6 +7,7 @@ int main() {
     int size = sizeof(arr) / sizeof(arr[0]);
 
     display(arr, size);
+    printf("25331A05F9");
 
     return 0;
 }
